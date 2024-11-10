@@ -31,3 +31,23 @@ This Python script, `pass_manager.py`, is a simple password manager that uses sy
    - It first loads the authentication expiration time, then checks if it has expired; if so, it prompts for re-authentication.
    - If an invalid number of arguments is provided, it prints usage instructions.
 
+```
+ python pass_manager.py
+ ____               __  __
+|  _ \ __ _ ___ ___|  \/  | __ _ _ __
+| |_) / _` / __/ __| |\/| |/ _` | '_ \
+|  __/ (_| \__ \__ \ |  | | (_| | | | |
+|_|   \__,_|___/___/_|  |_|\__,_|_| |_|
+
+
+Usage: python pass_manager.py <command> <args>
+Commands:
+  init                 # Initialize the database
+  set_master           # Set the master password
+  generate_key         # Set the encryption key
+  add <name> <password> # Add a password entry
+  get <name>           # Get the password and copy to clipboard
+  delete <name>        # Delete a password entry
+  list                 # List all services
+  get_otp <name>      # Get OTP code for a service
+```
